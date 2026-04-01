@@ -1,0 +1,56 @@
+# 🔥 Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# 🔥 Virtual environment
+venv/
+env/
+ENV/
+
+# 🔥 Environment variables (VERY IMPORTANT)
+.env
+
+# 🔥 Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# 🔥 VS Code settings
+.vscode/
+
+# 🔥 Mac / Windows system files
+.DS_Store
+Thumbs.db
+
+# 🔥 Streamlit cache
+.streamlit/
+
+# 🔥 Logs
+*.log
+
+# 🔥 Model files (avoid large files in GitHub)
+*.h5
+*.pkl
+*.pickle
+*.pt
+*.bin
+
+# 🔥 FAISS index (vector DB files)
+faiss_index/
+
+# 🔥 Data files (optional - remove if you want to upload sample data)
+data/*.pdf
+data/*.txt
+
+# 🔥 Build / dist
+build/
+dist/
+
+# 🔥 Temporary files
+*.tmp
+*.temp
+
+# 🔥 Python packaging
+*.egg-info/
+.eggs/
