@@ -6,6 +6,8 @@ from PIL import Image
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 from pypdf import PdfReader
+
+
 def load_pdf_text(pdf_path):
     text = ""
 
