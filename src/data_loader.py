@@ -5,8 +5,8 @@ from PIL import Image
 
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
-
 from pypdf import PdfReader
+
 
 def load_pdf_text(pdf_path):
     text = ""
@@ -19,9 +19,12 @@ def load_pdf_text(pdf_path):
             if page_text:
                 text += page_text + "\n"
 
-        print("Extracted text length:", len(text))
-
     except Exception as e:
         print("PDF extraction failed:", e)
 
     return text
+
+
+def load_text_file(file_path):
+    with open(file_path, "r", encoding="utf-8") as file:
+        return file.read()
